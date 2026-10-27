@@ -11,6 +11,7 @@ import { Central } from './views/Central';
 import { CRM } from './views/CRM';
 import { Disparador } from './views/Disparador';
 import { Pedidos } from './views/Pedidos';
+import { TesteGithub } from './views/TesteGithub';
 import { AuthProvider, useAuth } from './auth/AuthProvider';
 import { LoginView } from './views/LoginView';
 import { UnauthorizedView } from './views/UnauthorizedView';
@@ -59,6 +60,7 @@ export default function App() {
                 <Route path="crm" element={<CRM />} />
                 <Route path="disparador" element={<Disparador />} />
                 <Route path="pedidos" element={<Pedidos />} />
+                <Route path="teste-github" element={<TesteGithub />} />
               </Route>
             </Routes>
           </BrowserRouter>
