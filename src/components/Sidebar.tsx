@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { 
   LayoutDashboard, MessageSquare, Kanban, Send, ShoppingBag, 
   BarChart, Users, MenuSquare, MonitorSmartphone, Utensils, Truck,
-  Settings, Link
+  Settings, Link, FlaskConical
 } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -19,6 +19,7 @@ export const Sidebar = () => {
     { name: 'CRM / Funil', path: '/crm', icon: Kanban },
     { name: 'Disparador Inteligente', path: '/disparador', icon: Send },
     { name: 'Pedidos', path: '/pedidos', icon: ShoppingBag },
+    { name: 'Teste GitHub', path: '/teste-github', icon: FlaskConical },
   ];
 
   const plannedItems = [
