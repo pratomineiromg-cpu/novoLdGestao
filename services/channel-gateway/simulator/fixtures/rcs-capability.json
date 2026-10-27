@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "kind": "capability_update",
+  "providerEventId": "synthetic-rcs-event-capability-001",
+  "occurredAt": "2026-01-01T11:03:00.000Z",
+  "availability": "KNOWN_AVAILABLE",
+  "capabilities": ["TEXT", "RICH_MEDIA"],
+  "capabilitySource": "PROVIDER_EVENT"
+}

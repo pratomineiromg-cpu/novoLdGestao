@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "fixtureContract": "INTERNAL_SYNTHETIC_META_V1",
+  "provider": "WHATSAPP_META_OFFICIAL",
+  "channel": "WHATSAPP",
+  "kind": "delivery_status",
+  "providerEventId": "synthetic-meta-event-delivery-001",
+  "providerMessageId": "synthetic-meta-message-outbound-001",
+  "occurredAt": "2026-01-01T10:02:00.000Z",
+  "deliveryStatus": "DELIVERED"
+}

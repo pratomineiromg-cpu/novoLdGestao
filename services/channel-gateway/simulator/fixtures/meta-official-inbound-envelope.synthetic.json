@@ -1,0 +1,31 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "waba-synthetic-001",
+      "changes": [
+        {
+          "field": "messages",
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "+15555550100",
+              "phone_number_id": "phone-number-id-synthetic-001"
+            },
+            "messages": [
+              {
+                "from": "+15555550123",
+                "id": "wamid.synthetic.inbound.001",
+                "timestamp": "1788523200",
+                "type": "text",
+                "text": {
+                  "body": "Synthetic official envelope message"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "synthetic": true,
+  "kind": "delivery_status",
+  "providerEventId": "synthetic-rcs-event-delivery-001",
+  "providerMessageId": "synthetic-rcs-message-outbound-001",
+  "occurredAt": "2026-01-01T11:01:00.000Z",
+  "deliveryStatus": "DELIVERED"
+}

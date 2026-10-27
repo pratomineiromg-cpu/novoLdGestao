@@ -1,0 +1,14 @@
+{
+  "synthetic": true,
+  "fixtureContract": "INTERNAL_SYNTHETIC_META_V1",
+  "provider": "WHATSAPP_META_OFFICIAL",
+  "channel": "WHATSAPP",
+  "kind": "inbound_message",
+  "providerEventId": "synthetic-meta-event-inbound-001",
+  "providerMessageId": "synthetic-meta-message-inbound-001",
+  "occurredAt": "2026-01-01T10:00:00.000Z",
+  "providerAddress": "+5511900000101",
+  "externalConversationId": "synthetic-meta-conversation-001",
+  "contentType": "TEXT",
+  "text": "Mensagem fictícia de teste"
+}

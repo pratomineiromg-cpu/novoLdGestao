@@ -1,0 +1,15 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Tools & Audits
+*.local.json
+*.plan.json
+*.report.json
+f1b*-audit*.txt
+f1b*-audit*.zip

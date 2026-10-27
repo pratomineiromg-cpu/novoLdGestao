@@ -1,0 +1,27 @@
+{
+  "projectId": "lidacomzap-gestao-inteligente",
+  "tenantId": "t-pratomineiro",
+  "operationId": "op-example-001",
+  "contacts": [
+    {
+      "id": "c-test-01",
+      "tenantId": "t-pratomineiro",
+      "name": "Cliente Exemplo 01",
+      "phone": "5531999990001",
+      "tags": ["cliente-antigo"],
+      "notes": "Cliente teste",
+      "createdAt": "2026-09-01T12:00:00Z",
+      "updatedAt": "2026-09-01T12:00:00Z"
+    },
+    {
+      "id": "c-test-02",
+      "tenantId": "t-pratomineiro",
+      "name": "Cliente Exemplo 02",
+      "phone": "(31) 99999-0002",
+      "tags": [],
+      "notes": "",
+      "createdAt": "2026-09-01T14:30:00Z",
+      "updatedAt": "2026-09-01T14:30:00Z"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function currentUserProfile() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+    
+    function isActiveUser() {
+      return isAuthenticated() && exists(/databases/$(database)/documents/users/$(request.auth.uid)) && currentUserProfile().active == true;
+    }
+    
+    function hasRole(role) {
+      return isActiveUser() && currentUserProfile().role == role;
+    }
+
+    match /users/{uid} {
+      allow read: if isAuthenticated() && request.auth.uid == uid && resource.data.active == true;
+      allow write: if false; // Client cannot write to users
+    }
+
+    match /contacts/{document=**} { allow read, write: if isActiveUser(); }
+    match /conversations/{document=**} { allow read, write: if isActiveUser(); }
+    match /messages/{document=**} { allow read, write: if isActiveUser(); }
+    match /opportunities/{document=**} { allow read, write: if isActiveUser(); }
+    match /dispatchCampaigns/{document=**} { allow read, write: if isActiveUser(); }
+    match /dispatchQueue/{document=**} { allow read, write: if isActiveUser(); }
+    match /pendingOutboundMessages/{document=**} { allow read, write: if isActiveUser(); }
+    match /orders/{document=**} { allow read, write: if isActiveUser(); }
+    match /orderItems/{document=**} { allow read, write: if isActiveUser(); }
+    match /timelineEvents/{document=**} { allow read, write: if isActiveUser(); }
+    match /customerProfiles/{document=**} { allow read, write: if isActiveUser(); }
+    match /customerAddresses/{document=**} { allow read, write: if isActiveUser(); }
+    
+    match /{document=**} {
+      allow read, write: if false; // Default deny
+    }
+  }
+}
+

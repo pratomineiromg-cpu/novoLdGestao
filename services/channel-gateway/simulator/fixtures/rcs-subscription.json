@@ -1,0 +1,7 @@
+{
+  "synthetic": true,
+  "kind": "subscription_update",
+  "providerEventId": "synthetic-rcs-event-subscription-001",
+  "occurredAt": "2026-01-01T11:04:00.000Z",
+  "subscriptionStatus": "SUBSCRIBED"
+}

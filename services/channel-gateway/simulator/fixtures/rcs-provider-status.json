@@ -1,0 +1,7 @@
+{
+  "synthetic": true,
+  "kind": "provider_status",
+  "providerEventId": "synthetic-rcs-event-provider-status-001",
+  "occurredAt": "2026-01-01T11:05:00.000Z",
+  "providerStatus": "AVAILABLE"
+}

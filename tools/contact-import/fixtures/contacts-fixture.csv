@@ -1,0 +1,5 @@
+Name;Phone;Tags
+Cliente Teste Alfa;+55 11 90000-0001;fixture|lista
+Cliente Teste Beta;+55 11 90000-0002;fixture
+Cliente Teste Duplicado;+55 11 90000-0001;fixture
+Cliente Teste Sem Telefone;;fixture
